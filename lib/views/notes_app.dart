@@ -3,7 +3,6 @@ import 'package:g_notes/views/notes_view.dart';
 import 'package:g_notes/views/test.dart';
 import 'package:g_notes/views/widgets/custom_float_action_btn.dart';
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -12,9 +11,7 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       floatingActionButton: CustomFloatBUtton(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const Test();
-          }));
+          Navigator.pushNamed(context, 'page A');
         },
         child: const Icon(Icons.add),
       ),

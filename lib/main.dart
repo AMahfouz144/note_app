@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:g_notes/views/notes_app.dart';
+import 'package:g_notes/views/test.dart';
 // ignore: depend_on_referenced_packages
 
 void main() {
@@ -16,6 +17,9 @@ class NotesApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       home: const MyApp(),
+      routes: <String, WidgetBuilder> {
+      '/a': (BuildContext context) =>  Test(title: Text('page A')),
+    },
     );
   }
 }

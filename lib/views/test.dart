@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Test extends StatelessWidget {
-  const Test({super.key});
-
+  Test({super.key, this.title});
+  Widget? title;
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.white,
+    return Scaffold(
+      body: Container(
+        color: Colors.white,
+      ),
     );
   }
 }
