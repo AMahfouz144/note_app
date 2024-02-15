@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:g_notes/views/notes_view.dart';
-import 'package:g_notes/views/test.dart';
+import 'package:g_notes/views/edit_view.dart';
 import 'package:g_notes/views/widgets/custom_button.dart';
 import 'package:g_notes/views/widgets/custom_float_action_btn.dart';
 import 'package:g_notes/views/widgets/custom_text_field.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:g_notes/views/test.dart';
+import 'package:g_notes/views/edit_view.dart';
 import 'package:g_notes/views/widgets/custom_Llist_tile.dart';
 
 class CustomNote extends StatelessWidget {

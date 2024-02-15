@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomFloatBUtton extends StatelessWidget {
-  CustomFloatBUtton({super.key, required this.onPressed, this.child});
+class CustomFloatButton extends StatelessWidget {
+  CustomFloatButton({super.key, required this.onPressed, this.child});
   void Function()? onPressed;
   Widget? child;
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:g_notes/views/notes_app.dart';
-import 'package:g_notes/views/test.dart';
+import 'package:g_notes/views/edit_view.dart';
 // ignore: depend_on_referenced_packages
 
 void main() {
