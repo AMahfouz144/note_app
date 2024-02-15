@@ -16,29 +16,46 @@ class MyApp extends StatelessWidget {
           showModalBottomSheet(
               context: context,
               builder: (context) {
-                return const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
-                      CustomTextField(
+                      const CustomTextField(
                         text: 'Name',
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
-                      CustomTextField(
+                      const CustomTextField(
                         text: 'description',
                         lines: 4,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
                       CustomButton(
-                        width: 100,
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return Test();
+                          }));
+                        },
+                        width: double.infinity,
                         hight: 50,
+                        child: const Center(
+                          child: Text(
+                            'Add',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.normal,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   ),
