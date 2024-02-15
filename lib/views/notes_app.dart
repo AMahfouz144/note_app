@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:g_notes/views/notes_view.dart';
 import 'package:g_notes/views/test.dart';
+import 'package:g_notes/views/widgets/custom_button.dart';
 import 'package:g_notes/views/widgets/custom_float_action_btn.dart';
 import 'package:g_notes/views/widgets/custom_text_field.dart';
 
@@ -35,25 +36,9 @@ class MyApp extends StatelessWidget {
                       SizedBox(
                         height: 40,
                       ),
-                      SizedBox(
-                        
-                        child: ButtonBar(
-                            
-                            alignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Icon(
-                                Icons.home,
-                                color: Colors.white,
-                              ),
-                              Icon(
-                                Icons.add,
-                                color: Colors.white,
-                              ),
-                              Icon(
-                                Icons.opacity,
-                                color: Colors.white,
-                              )
-                            ]),
+                      CustomButton(
+                        width: 100,
+                        hight: 50,
                       ),
                     ],
                   ),
