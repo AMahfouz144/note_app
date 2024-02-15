@@ -7,7 +7,7 @@ class CustomAppBar extends StatelessWidget {
     this.title,
     this.icon,
     this.onPressed,
-    });
+  });
   final String? title;
   final Widget? icon;
   final void Function()? onPressed;
@@ -18,9 +18,9 @@ class CustomAppBar extends StatelessWidget {
         Text(
           title ?? '',
           style: const TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
-              fontStyle: FontStyle.italic),
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         const Spacer(),
         CustomIcon(

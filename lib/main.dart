@@ -17,9 +17,9 @@ class NotesApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       home: const MyApp(),
-      routes: <String, WidgetBuilder> {
-      '/a': (BuildContext context) =>  Test(title: Text('page A')),
-    },
+      routes: <String, WidgetBuilder>{
+        '/a': (BuildContext context) => EditView(title: Text('Edit page')),
+      },
     );
   }
 }

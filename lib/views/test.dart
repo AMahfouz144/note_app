@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:g_notes/views/widgets/custom_appbar.dart';
 import 'package:g_notes/views/widgets/custom_text_field.dart';
 
-class Test extends StatelessWidget {
-  Test({super.key, this.title});
+class EditView extends StatelessWidget {
+  EditView({super.key, this.title});
   Widget? title;
   @override
   Widget build(BuildContext context) {

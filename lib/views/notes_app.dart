@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
-                            return Test();
+                            return EditView();
                           }));
                         },
                         width: double.infinity,
