@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String? title, subtitle;
   final GlobalKey<FormState> formKey = GlobalKey();
-  final AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,10 +54,11 @@ class _MyAppState extends State<MyApp> {
                         ),
                         CustomButton(
                           onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) {
-                              return EditView();
-                            }));
+                            if (formKey.currentState!.validate()) {
+                              formKey.currentState!.save();
+                            } else {
+                              autovalidateMode = AutovalidateMode.always;
+                            }
                           },
                           width: double.infinity,
                           hight: 50,
