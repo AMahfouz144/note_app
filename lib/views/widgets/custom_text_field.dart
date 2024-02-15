@@ -7,13 +7,24 @@ class CustomTextField extends StatelessWidget {
     this.text,
     this.borderRadius,
     this.lines,
+    this.onSaved,
   }) : super(key: key);
   final String? text;
   final double? borderRadius;
   final int? lines;
+  final void Function(String?)? onSaved;
+
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
+      onSaved: onSaved,
+      validator: (value) {
+        if (value?.isEmpty ?? true) {
+          return 'this field is required';
+        } else {
+          return null;
+        }
+      },
       maxLines: lines ?? 1,
       decoration: InputDecoration(
           label: Text(text ?? ' '),
